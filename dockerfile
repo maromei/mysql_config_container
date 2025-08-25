@@ -1,4 +1,4 @@
-FROM mysql:5.6
+FROM mysql:9.4
 
 ADD mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
 

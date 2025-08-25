@@ -1,6 +1,6 @@
 FROM mysql:9.4
 
-ADD mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
+ADD my.cnf /etc/my.cnf
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["mysqld"]

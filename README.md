@@ -9,3 +9,6 @@ While setting the `bind-address` this way is not always best practice, in my cur
 use case it is for a simple internal application, which resides in its own seperate
 network. If you wanted to do it the proper way, you should probably still set
 the `bind-address` to the statically defined gateway of that custom network.
+
+The configuration also explicitely sets the protocol to be `tcp`.
+This is needed for a connection via docker network.

@@ -24,5 +24,4 @@ jobs:
           full_container_url: "${{ env.container_registry }}/${{ env.container_path }}:${{ env.container_tag }}"
         run: |
           docker build . --tag $full_container_url
-          docker run $full_container_url
           docker push $full_container_url
